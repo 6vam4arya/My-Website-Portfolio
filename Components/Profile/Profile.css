@@ -1,0 +1,76 @@
+.profile_img{
+    height:200px;
+    margin-top:40px;
+    /* border-radius: 50px; */
+}
+
+.profile h1{
+    text-align: center;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.profile h1 span{
+    background: linear-gradient(270deg, #d26b16 0.36%, #681aa3 102.6%);
+    background-clip: text;
+    /*  */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* this fills the linear background color as done in Navbar.css with connect with me but removes background filling */
+}
+
+.profile p{
+    width : 50%;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:35px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap:25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.connect{
+    padding: 25px 45px;
+    /* top left right bottom*/
+    border-radius: 50px;
+    cursor:pointer;
+    background: linear-gradient(270deg, #d26b16 0.36%, #681aa3 102.6%);
+    transition: 0.6s;
+}
+
+.connect:hover{
+    transform: scale(0.8);
+}
+
+.resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 3px solid white;
+    /* border shorthand : width style color */
+    cursor: pointer;
+    transition: 0.5s;
+    /* when mouse pointer reaches this div, its appearance changes to hand */
+}
+
+/* we want when pointer is hovering over resume div, so its border color changes to something else */
+/* that is we want something to happen when "hover" action is happening on div with class=resume */
+
+.resume:hover{
+    border: 4px double rgb(197, 85, 197);
+    transform: scale(0.8);
+    /* transformation happens abruptly if transition is not added */
+    /* add transition time to make transformation smooth */
+}
