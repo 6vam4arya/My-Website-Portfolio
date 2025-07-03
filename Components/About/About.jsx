@@ -18,10 +18,11 @@ const About = () => {
                     <p>Para 2</p>
                 </div>
                 <div className="about-skills">
-                    <div className="about-skill"><p>HTML, CSS</p><hr style={{width:"50%"}}/></div>
-                    <div className="about-skill"><p> C++</p><hr style={{width:"50%"}}/></div>
-                    <div className="about-skill"><p>JS</p><hr style={{width:"50%"}}/></div>
-                    <div className="about-skill"><p>HTML, CSS, JS, C++</p><hr style={{width:"50%"}}/></div>
+                    <div className="about-skill"><p>HTML, CSS</p></div>
+                    <div className="about-skill"><p> C++</p></div>
+                    <div className="about-skill"><p>JS</p></div>
+                    {/* <hr style={{width:"50%"}}/> */}
+                    <div className="about-skill"><p>HTML, CSS, JS, C++</p></div>
                 </div>
             </div>
         </div>
