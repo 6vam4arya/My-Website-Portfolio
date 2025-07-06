@@ -4,6 +4,7 @@ import Profile from '../Components/Profile/Profile'
 import About from '../Components/About/About'
 import Project from '../Components/Projects/Project'
 import Contact from '../Components/Contact Area/contact'
+import Footer_sec from '../Components/Footer/footer'
 
 //we have to import jsx file from components folder
 
@@ -15,6 +16,7 @@ const App = () => {
       <About/>
       <Project/>    
       <Contact/>  
+      <Footer_sec/>
     </>
   )
 }
