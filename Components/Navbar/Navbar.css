@@ -8,6 +8,7 @@
 
 .nav-menu{
     display: flex;
+    /* flex-direction: row; */
     align-items: center;
     list-style: none; 
     gap: 70px; 
@@ -36,5 +37,5 @@
 }
 
 .nav-connect:hover{
-    transform: scale(1.05);
+    transform: scale(1.3);
 }
