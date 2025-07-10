@@ -9,3 +9,7 @@ body{
   color:whitesmoke;
   font-family: 'outfit';
 }
+
+html{
+    scroll-behavior: smooth;
+}

@@ -5,10 +5,31 @@ import { faEnvelope, faPhone, faCode } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const contact = () => {
+     const onSubmit = async (event) => {
+    event.preventDefault();    
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "d10750db-d945-445e-97d6-cb801d5ca067");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <div className='contact'>
 
-        <div className="contact-title">
+        <div className="contact-title" id="CONTACT">
             <h1>Connection Hub</h1>            
         </div>
 
@@ -39,12 +60,12 @@ const contact = () => {
                     </div>                                                                                             
                 </div>
             </div>
-            <form className="contact-right">
+            <form onSubmit={onSubmit} className="contact-right">
                 <label htmlFor=''>Your Name</label>
                 <input type='text' placeholder='Enter your name' name='name'/>
                 <label htmlFor=''>Your Email</label>
                 <input type='email' placeholder='Enter your email' name='email'/>
-                <label htmlFor=''>Write yiur message here</label>
+                <label htmlFor=''>Write your message here</label>
                 <textarea name="message" rows="10" placeholder='Enter your message'/>
                 <button type='submit' className='contact-submit'>Submit Now</button>
             </form>

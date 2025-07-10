@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Project = () => {
   return (
-    <div className='projects'>
+    <div className='projects' id="PROJECT">
         <div className="projects-title">
             <h1>My Projects</h1>
             {/* <img src={} alt=""/> */}
